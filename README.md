@@ -1,4 +1,4 @@
-### Hi there 👋, I'm [Simone NIgro](https://github.com/nigrosimone/) 👨‍💻
+### Hi there 👋, I'm [Simone Nigro](https://github.com/nigrosimone/) 👨‍💻
 
 <br/>
 
