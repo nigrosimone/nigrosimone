@@ -17,3 +17,13 @@
 <p>
 A Skilled FullStack Developer 🚀 from Italy. Always working on some project or learning something new!
 </p>
+
+```ts
+const myself = {
+  name: "Simone",
+  surname: "Nigro",
+  country: "Italy",
+  occupation: "FullStack Developer @ ACCA software",
+  email: "nigro.simone@gmail.com",
+};
+```
