@@ -19,7 +19,7 @@ A Skilled FullStack Developer 🚀 from Italy. Always working on some project or
 </p>
 
 ```ts
-const myself = {
+const mySelf = {
   name: "Simone",
   surname: "Nigro",
   country: "Italy",
