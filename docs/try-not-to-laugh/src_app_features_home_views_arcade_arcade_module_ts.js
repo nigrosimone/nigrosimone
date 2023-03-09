@@ -511,18 +511,18 @@ class YoutubePlayerWrapperComponent {
   }
   ngOnInit() {
     this.playerVars = {
-      autoplay: YT.AutoPlay.NoAutoPlay,
-      controls: YT.Controls.Hide,
-      showinfo: YT.ShowInfo.Hide,
-      modestbranding: YT.ModestBranding.Modest,
-      rel: YT.RelatedVideos.Hide
+      autoplay: 0,
+      controls: 0,
+      showinfo: 0,
+      modestbranding: 1,
+      rel: 0
     };
   }
   /**
    * Evento di cambiamento di stato del player di YouTube
    */
   onStateChange(e) {
-    if (e.data === YT.PlayerState.PLAYING) {
+    if (e.data === 1) {
       if (!this.seekApplied && !this.seekChecked && this.seek > 0) {
         this.seekChecked = true;
         if (this.seek < this.youtube.getDuration()) {
