@@ -106,7 +106,10 @@ class CameraDetectionComponent {
         video: {}
       });
       _this.video.nativeElement.srcObject = _this.stream;
-      const URI = '/assets/weights/';
+      let URI = '/assets/weights/';
+      if (document.location.hostname.includes('github.io')) {
+        URI = '/nigrosimone/try-not-to-laugh' + URI;
+      }
       const models = [face_api_js__WEBPACK_IMPORTED_MODULE_1__.nets.tinyFaceDetector.loadFromUri(URI), face_api_js__WEBPACK_IMPORTED_MODULE_1__.nets.faceRecognitionNet.loadFromUri(URI), face_api_js__WEBPACK_IMPORTED_MODULE_1__.nets.faceExpressionNet.loadFromUri(URI)];
       if (_this.enableFaceAndGender) {
         models.push(face_api_js__WEBPACK_IMPORTED_MODULE_1__.nets.ageGenderNet.loadFromUri(URI));
