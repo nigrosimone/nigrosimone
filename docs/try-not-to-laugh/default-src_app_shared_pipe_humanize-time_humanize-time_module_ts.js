@@ -1,64 +1,81 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~views-arcade-arcade-module~views-emoji-detection-emoji-detection-module~views-expression-tra~f5e49aad"],{
+(self["webpackChunktry_not_to_laugh"] = self["webpackChunktry_not_to_laugh"] || []).push([["default-src_app_shared_pipe_humanize-time_humanize-time_module_ts"],{
 
-/***/ "0Fv8":
-/*!*****************************************************************!*\
-  !*** ./src/app/shared/pipe/humanize-time/humanize-time.pipe.ts ***!
-  \*****************************************************************/
-/*! exports provided: HumanizeTimePipe */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HumanizeTimePipe", function() { return HumanizeTimePipe; });
-/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! humanize-duration */ "jxQj");
-/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-
-class HumanizeTimePipe {
-    transform(value) {
-        return humanize_duration__WEBPACK_IMPORTED_MODULE_0__(value, { language: 'it' });
-    }
-}
-HumanizeTimePipe.ɵfac = function HumanizeTimePipe_Factory(t) { return new (t || HumanizeTimePipe)(); };
-HumanizeTimePipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({ name: "humanizeTime", type: HumanizeTimePipe, pure: true });
-
-
-/***/ }),
-
-/***/ "8Vwt":
+/***/ 6453:
 /*!*******************************************************************!*\
   !*** ./src/app/shared/pipe/humanize-time/humanize-time.module.ts ***!
   \*******************************************************************/
-/*! exports provided: HumanizeTimeModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HumanizeTimeModule", function() { return HumanizeTimeModule; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _humanize_time_pipe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./humanize-time.pipe */ "0Fv8");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HumanizeTimeModule": () => (/* binding */ HumanizeTimeModule)
+/* harmony export */ });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var _humanize_time_pipe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./humanize-time.pipe */ 1660);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
 
 
 
-class HumanizeTimeModule {
-}
-HumanizeTimeModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: HumanizeTimeModule });
-HumanizeTimeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function HumanizeTimeModule_Factory(t) { return new (t || HumanizeTimeModule)(); }, imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](HumanizeTimeModule, { declarations: [_humanize_time_pipe__WEBPACK_IMPORTED_MODULE_1__["HumanizeTimePipe"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]], exports: [_humanize_time_pipe__WEBPACK_IMPORTED_MODULE_1__["HumanizeTimePipe"]] }); })();
-
+class HumanizeTimeModule {}
+HumanizeTimeModule.ɵfac = function HumanizeTimeModule_Factory(t) {
+  return new (t || HumanizeTimeModule)();
+};
+HumanizeTimeModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+  type: HumanizeTimeModule
+});
+HumanizeTimeModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule]
+});
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](HumanizeTimeModule, {
+    declarations: [_humanize_time_pipe__WEBPACK_IMPORTED_MODULE_0__.HumanizeTimePipe],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule],
+    exports: [_humanize_time_pipe__WEBPACK_IMPORTED_MODULE_0__.HumanizeTimePipe]
+  });
+})();
 
 /***/ }),
 
-/***/ "jxQj":
+/***/ 1660:
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/pipe/humanize-time/humanize-time.pipe.ts ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HumanizeTimePipe": () => (/* binding */ HumanizeTimePipe)
+/* harmony export */ });
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! humanize-duration */ 992);
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+class HumanizeTimePipe {
+  transform(value) {
+    return humanize_duration__WEBPACK_IMPORTED_MODULE_0__(value, {
+      language: 'it'
+    });
+  }
+}
+HumanizeTimePipe.ɵfac = function HumanizeTimePipe_Factory(t) {
+  return new (t || HumanizeTimePipe)();
+};
+HumanizeTimePipe.ɵpipe = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
+  name: "humanizeTime",
+  type: HumanizeTimePipe,
+  pure: true
+});
+
+/***/ }),
+
+/***/ 992:
 /*!*************************************************************!*\
   !*** ./node_modules/humanize-duration/humanize-duration.js ***!
   \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
 
@@ -92,40 +109,77 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       return c === 1 ? "δευτερόλεπτο" : "δευτερόλεπτα";
     },
     ms: function (c) {
-      return c === 1
-        ? "χιλιοστό του δευτερολέπτου"
-        : "χιλιοστά του δευτερολέπτου";
+      return (c === 1 ? "χιλιοστό" : "χιλιοστά") + " του δευτερολέπτου";
     },
-    decimal: ",",
+    decimal: ","
   };
-
+  var ARABIC_DIGITS = ["۰", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
   var LANGUAGES = {
-    ar: {
-      y: function (c) {
-        return c === 1 ? "سنة" : "سنوات";
-      },
+    af: {
+      y: "jaar",
       mo: function (c) {
-        return c === 1 ? "شهر" : "أشهر";
+        return "maand" + (c === 1 ? "" : "e");
       },
       w: function (c) {
-        return c === 1 ? "أسبوع" : "أسابيع";
+        return c === 1 ? "week" : "weke";
       },
       d: function (c) {
-        return c === 1 ? "يوم" : "أيام";
+        return c === 1 ? "dag" : "dae";
       },
       h: function (c) {
-        return c === 1 ? "ساعة" : "ساعات";
+        return c === 1 ? "uur" : "ure";
       },
       m: function (c) {
-        return c > 2 && c < 11 ? "دقائق" : "دقيقة";
+        return c === 1 ? "minuut" : "minute";
       },
       s: function (c) {
-        return c === 1 ? "ثانية" : "ثواني";
+        return "sekonde" + (c === 1 ? "" : "s");
       },
       ms: function (c) {
-        return c === 1 ? "جزء من الثانية" : "أجزاء من الثانية";
+        return "millisekonde" + (c === 1 ? "" : "s");
+      },
+      decimal: ","
+    },
+    ar: {
+      y: function (c) {
+        return ["سنة", "سنتان", "سنوات"][getArabicForm(c)];
+      },
+      mo: function (c) {
+        return ["شهر", "شهران", "أشهر"][getArabicForm(c)];
+      },
+      w: function (c) {
+        return ["أسبوع", "أسبوعين", "أسابيع"][getArabicForm(c)];
+      },
+      d: function (c) {
+        return ["يوم", "يومين", "أيام"][getArabicForm(c)];
+      },
+      h: function (c) {
+        return ["ساعة", "ساعتين", "ساعات"][getArabicForm(c)];
+      },
+      m: function (c) {
+        return ["دقيقة", "دقيقتان", "دقائق"][getArabicForm(c)];
+      },
+      s: function (c) {
+        return ["ثانية", "ثانيتان", "ثواني"][getArabicForm(c)];
+      },
+      ms: function (c) {
+        return ["جزء من الثانية", "جزآن من الثانية", "أجزاء من الثانية"][getArabicForm(c)];
       },
       decimal: ",",
+      delimiter: " و ",
+      _formatCount: function (count, decimal) {
+        var replacements = assign(ARABIC_DIGITS, {
+          ".": decimal
+        });
+        var characters = count.toString().split("");
+        for (var i = 0; i < characters.length; i++) {
+          var character = characters[i];
+          if (has(replacements, character)) {
+            characters[i] = replacements[character];
+          }
+        }
+        return characters.join("");
+      }
     },
     bg: {
       y: function (c) {
@@ -152,7 +206,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return ["милисекунди", "милисекунда", "милисекунди"][getSlavicForm(c)];
       },
-      decimal: ",",
+      decimal: ","
+    },
+    bn: {
+      y: "বছর",
+      mo: "মাস",
+      w: "সপ্তাহ",
+      d: "দিন",
+      h: "ঘন্টা",
+      m: "মিনিট",
+      s: "সেকেন্ড",
+      ms: "মিলিসেকেন্ড"
     },
     ca: {
       y: function (c) {
@@ -179,7 +243,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "milisegon" + (c === 1 ? "" : "s");
       },
-      decimal: ",",
+      decimal: ","
     },
     cs: {
       y: function (c) {
@@ -201,16 +265,22 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return ["minuta", "minuty", "minuty", "minut"][getCzechOrSlovakForm(c)];
       },
       s: function (c) {
-        return ["sekunda", "sekundy", "sekundy", "sekund"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["sekunda", "sekundy", "sekundy", "sekund"][getCzechOrSlovakForm(c)];
       },
       ms: function (c) {
-        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][getCzechOrSlovakForm(c)];
       },
-      decimal: ",",
+      decimal: ","
+    },
+    cy: {
+      y: "flwyddyn",
+      mo: "mis",
+      w: "wythnos",
+      d: "diwrnod",
+      h: "awr",
+      m: "munud",
+      s: "eiliad",
+      ms: "milieiliad"
     },
     da: {
       y: "år",
@@ -235,7 +305,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekund" + (c === 1 ? "" : "er");
       },
-      decimal: ",",
+      decimal: ","
     },
     de: {
       y: function (c) {
@@ -262,7 +332,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "Millisekunde" + (c === 1 ? "" : "n");
       },
-      decimal: ",",
+      decimal: ","
     },
     el: greek,
     en: {
@@ -290,7 +360,34 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisecond" + (c === 1 ? "" : "s");
       },
-      decimal: ".",
+      decimal: "."
+    },
+    eo: {
+      y: function (c) {
+        return "jaro" + (c === 1 ? "" : "j");
+      },
+      mo: function (c) {
+        return "monato" + (c === 1 ? "" : "j");
+      },
+      w: function (c) {
+        return "semajno" + (c === 1 ? "" : "j");
+      },
+      d: function (c) {
+        return "tago" + (c === 1 ? "" : "j");
+      },
+      h: function (c) {
+        return "horo" + (c === 1 ? "" : "j");
+      },
+      m: function (c) {
+        return "minuto" + (c === 1 ? "" : "j");
+      },
+      s: function (c) {
+        return "sekundo" + (c === 1 ? "" : "j");
+      },
+      ms: function (c) {
+        return "milisekundo" + (c === 1 ? "" : "j");
+      },
+      decimal: ","
     },
     es: {
       y: function (c) {
@@ -317,7 +414,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "milisegundo" + (c === 1 ? "" : "s");
       },
-      decimal: ",",
+      decimal: ","
     },
     et: {
       y: function (c) {
@@ -344,7 +441,18 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekund" + (c === 1 ? "" : "it");
       },
-      decimal: ",",
+      decimal: ","
+    },
+    eu: {
+      y: "urte",
+      mo: "hilabete",
+      w: "aste",
+      d: "egun",
+      h: "ordu",
+      m: "minutu",
+      s: "segundo",
+      ms: "milisegundo",
+      decimal: ","
     },
     fa: {
       y: "سال",
@@ -355,7 +463,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "دقیقه",
       s: "ثانیه",
       ms: "میلی ثانیه",
-      decimal: ".",
+      decimal: "."
     },
     fi: {
       y: function (c) {
@@ -382,7 +490,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekunti" + (c === 1 ? "" : "a");
       },
-      decimal: ",",
+      decimal: ","
     },
     fo: {
       y: "ár",
@@ -403,7 +511,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       },
       s: "sekund",
       ms: "millisekund",
-      decimal: ",",
+      decimal: ","
     },
     fr: {
       y: function (c) {
@@ -428,7 +536,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "milliseconde" + (c >= 2 ? "s" : "");
       },
-      decimal: ",",
+      decimal: ","
     },
     gr: greek,
     he: {
@@ -456,7 +564,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return c === 1 ? "מילישנייה" : "מילישניות";
       },
-      decimal: ".",
+      decimal: "."
     },
     hr: {
       y: function (c) {
@@ -499,7 +607,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       },
       s: function (c) {
         var mod10 = c % 10;
-        if (mod10 === 5 || (Math.floor(c) === c && c >= 10 && c <= 19)) {
+        if (mod10 === 5 || Math.floor(c) === c && c >= 10 && c <= 19) {
           return "sekundi";
         } else if (mod10 === 1) {
           return "sekunda";
@@ -516,7 +624,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         }
         return "milisekundi";
       },
-      decimal: ",",
+      decimal: ","
     },
     hi: {
       y: "साल",
@@ -533,7 +641,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "मिनट",
       s: "सेकंड",
       ms: "मिलीसेकंड",
-      decimal: ".",
+      decimal: "."
     },
     hu: {
       y: "év",
@@ -544,7 +652,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "perc",
       s: "másodperc",
       ms: "ezredmásodperc",
-      decimal: ",",
+      decimal: ","
     },
     id: {
       y: "tahun",
@@ -555,7 +663,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "menit",
       s: "detik",
       ms: "milidetik",
-      decimal: ".",
+      decimal: "."
     },
     is: {
       y: "ár",
@@ -580,7 +688,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekúnd" + (c === 1 ? "a" : "ur");
       },
-      decimal: ".",
+      decimal: "."
     },
     it: {
       y: function (c) {
@@ -607,18 +715,54 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisecond" + (c === 1 ? "o" : "i");
       },
-      decimal: ",",
+      decimal: ","
     },
     ja: {
       y: "年",
-      mo: "月",
+      mo: "ヶ月",
       w: "週",
       d: "日",
       h: "時間",
       m: "分",
       s: "秒",
       ms: "ミリ秒",
-      decimal: ".",
+      decimal: "."
+    },
+    km: {
+      y: "ឆ្នាំ",
+      mo: "ខែ",
+      w: "សប្តាហ៍",
+      d: "ថ្ងៃ",
+      h: "ម៉ោង",
+      m: "នាទី",
+      s: "វិនាទី",
+      ms: "មិល្លីវិនាទី"
+    },
+    kn: {
+      y: function (c) {
+        return c === 1 ? "ವರ್ಷ" : "ವರ್ಷಗಳು";
+      },
+      mo: function (c) {
+        return c === 1 ? "ತಿಂಗಳು" : "ತಿಂಗಳುಗಳು";
+      },
+      w: function (c) {
+        return c === 1 ? "ವಾರ" : "ವಾರಗಳು";
+      },
+      d: function (c) {
+        return c === 1 ? "ದಿನ" : "ದಿನಗಳು";
+      },
+      h: function (c) {
+        return c === 1 ? "ಗಂಟೆ" : "ಗಂಟೆಗಳು";
+      },
+      m: function (c) {
+        return c === 1 ? "ನಿಮಿಷ" : "ನಿಮಿಷಗಳು";
+      },
+      s: function (c) {
+        return c === 1 ? "ಸೆಕೆಂಡ್" : "ಸೆಕೆಂಡುಗಳು";
+      },
+      ms: function (c) {
+        return c === 1 ? "ಮಿಲಿಸೆಕೆಂಡ್" : "ಮಿಲಿಸೆಕೆಂಡುಗಳು";
+      }
     },
     ko: {
       y: "년",
@@ -629,7 +773,18 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "분",
       s: "초",
       ms: "밀리 초",
-      decimal: ".",
+      decimal: "."
+    },
+    ku: {
+      y: "sal",
+      mo: "meh",
+      w: "hefte",
+      d: "roj",
+      h: "seet",
+      m: "deqe",
+      s: "saniye",
+      ms: "mîlîçirk",
+      decimal: ","
     },
     lo: {
       y: "ປີ",
@@ -640,13 +795,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "ນາທີ",
       s: "ວິນາທີ",
       ms: "ມິນລິວິນາທີ",
-      decimal: ",",
+      decimal: ","
     },
     lt: {
       y: function (c) {
-        return c % 10 === 0 || (c % 100 >= 10 && c % 100 <= 20)
-          ? "metų"
-          : "metai";
+        return c % 10 === 0 || c % 100 >= 10 && c % 100 <= 20 ? "metų" : "metai";
       },
       mo: function (c) {
         return ["mėnuo", "mėnesiai", "mėnesių"][getLithuanianForm(c)];
@@ -667,11 +820,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return ["sekundė", "sekundės", "sekundžių"][getLithuanianForm(c)];
       },
       ms: function (c) {
-        return ["milisekundė", "milisekundės", "milisekundžių"][
-          getLithuanianForm(c)
-        ];
+        return ["milisekundė", "milisekundės", "milisekundžių"][getLithuanianForm(c)];
       },
-      decimal: ",",
+      decimal: ","
     },
     lv: {
       y: function (c) {
@@ -698,7 +849,63 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return getLatvianForm(c) ? "milisekunde" : "milisekundes";
       },
-      decimal: ",",
+      decimal: ","
+    },
+    mk: {
+      y: function (c) {
+        return c === 1 ? "година" : "години";
+      },
+      mo: function (c) {
+        return c === 1 ? "месец" : "месеци";
+      },
+      w: function (c) {
+        return c === 1 ? "недела" : "недели";
+      },
+      d: function (c) {
+        return c === 1 ? "ден" : "дена";
+      },
+      h: function (c) {
+        return c === 1 ? "час" : "часа";
+      },
+      m: function (c) {
+        return c === 1 ? "минута" : "минути";
+      },
+      s: function (c) {
+        return c === 1 ? "секунда" : "секунди";
+      },
+      ms: function (c) {
+        return c === 1 ? "милисекунда" : "милисекунди";
+      },
+      decimal: ","
+    },
+    mn: {
+      y: "жил",
+      mo: "сар",
+      w: "долоо хоног",
+      d: "өдөр",
+      h: "цаг",
+      m: "минут",
+      s: "секунд",
+      ms: "миллисекунд",
+      decimal: "."
+    },
+    mr: {
+      y: function (c) {
+        return c === 1 ? "वर्ष" : "वर्षे";
+      },
+      mo: function (c) {
+        return c === 1 ? "महिना" : "महिने";
+      },
+      w: function (c) {
+        return c === 1 ? "आठवडा" : "आठवडे";
+      },
+      d: "दिवस",
+      h: "तास",
+      m: function (c) {
+        return c === 1 ? "मिनिट" : "मिनिटे";
+      },
+      s: "सेकंद",
+      ms: "मिलिसेकंद"
     },
     ms: {
       y: "tahun",
@@ -709,7 +916,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "minit",
       s: "saat",
       ms: "milisaat",
-      decimal: ".",
+      decimal: "."
     },
     nl: {
       y: "jaar",
@@ -732,7 +939,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return c === 1 ? "milliseconde" : "milliseconden";
       },
-      decimal: ",",
+      decimal: ","
     },
     no: {
       y: "år",
@@ -757,16 +964,14 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekund" + (c === 1 ? "" : "er");
       },
-      decimal: ",",
+      decimal: ","
     },
     pl: {
       y: function (c) {
         return ["rok", "roku", "lata", "lat"][getPolishForm(c)];
       },
       mo: function (c) {
-        return ["miesiąc", "miesiąca", "miesiące", "miesięcy"][
-          getPolishForm(c)
-        ];
+        return ["miesiąc", "miesiąca", "miesiące", "miesięcy"][getPolishForm(c)];
       },
       w: function (c) {
         return ["tydzień", "tygodnia", "tygodnie", "tygodni"][getPolishForm(c)];
@@ -784,11 +989,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return ["sekunda", "sekundy", "sekundy", "sekund"][getPolishForm(c)];
       },
       ms: function (c) {
-        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][
-          getPolishForm(c)
-        ];
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][getPolishForm(c)];
       },
-      decimal: ",",
+      decimal: ","
     },
     pt: {
       y: function (c) {
@@ -815,7 +1018,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "milissegundo" + (c === 1 ? "" : "s");
       },
-      decimal: ",",
+      decimal: ","
     },
     ro: {
       y: function (c) {
@@ -842,7 +1045,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return c === 1 ? "milisecundă" : "milisecunde";
       },
-      decimal: ",",
+      decimal: ","
     },
     ru: {
       y: function (c) {
@@ -867,11 +1070,107 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return ["секунд", "секунда", "секунды"][getSlavicForm(c)];
       },
       ms: function (c) {
-        return ["миллисекунд", "миллисекунда", "миллисекунды"][
-          getSlavicForm(c)
-        ];
+        return ["миллисекунд", "миллисекунда", "миллисекунды"][getSlavicForm(c)];
       },
-      decimal: ",",
+      decimal: ","
+    },
+    sq: {
+      y: function (c) {
+        return c === 1 ? "vit" : "vjet";
+      },
+      mo: "muaj",
+      w: "javë",
+      d: "ditë",
+      h: "orë",
+      m: function (c) {
+        return "minut" + (c === 1 ? "ë" : "a");
+      },
+      s: function (c) {
+        return "sekond" + (c === 1 ? "ë" : "a");
+      },
+      ms: function (c) {
+        return "milisekond" + (c === 1 ? "ë" : "a");
+      },
+      decimal: ","
+    },
+    sr: {
+      y: function (c) {
+        return ["години", "година", "године"][getSlavicForm(c)];
+      },
+      mo: function (c) {
+        return ["месеци", "месец", "месеца"][getSlavicForm(c)];
+      },
+      w: function (c) {
+        return ["недељи", "недеља", "недеље"][getSlavicForm(c)];
+      },
+      d: function (c) {
+        return ["дани", "дан", "дана"][getSlavicForm(c)];
+      },
+      h: function (c) {
+        return ["сати", "сат", "сата"][getSlavicForm(c)];
+      },
+      m: function (c) {
+        return ["минута", "минут", "минута"][getSlavicForm(c)];
+      },
+      s: function (c) {
+        return ["секунди", "секунда", "секунде"][getSlavicForm(c)];
+      },
+      ms: function (c) {
+        return ["милисекунди", "милисекунда", "милисекунде"][getSlavicForm(c)];
+      },
+      decimal: ","
+    },
+    ta: {
+      y: function (c) {
+        return c === 1 ? "வருடம்" : "ஆண்டுகள்";
+      },
+      mo: function (c) {
+        return c === 1 ? "மாதம்" : "மாதங்கள்";
+      },
+      w: function (c) {
+        return c === 1 ? "வாரம்" : "வாரங்கள்";
+      },
+      d: function (c) {
+        return c === 1 ? "நாள்" : "நாட்கள்";
+      },
+      h: function (c) {
+        return c === 1 ? "மணி" : "மணிநேரம்";
+      },
+      m: function (c) {
+        return "நிமிட" + (c === 1 ? "ம்" : "ங்கள்");
+      },
+      s: function (c) {
+        return "வினாடி" + (c === 1 ? "" : "கள்");
+      },
+      ms: function (c) {
+        return "மில்லி விநாடி" + (c === 1 ? "" : "கள்");
+      }
+    },
+    te: {
+      y: function (c) {
+        return "సంవత్స" + (c === 1 ? "రం" : "రాల");
+      },
+      mo: function (c) {
+        return "నెల" + (c === 1 ? "" : "ల");
+      },
+      w: function (c) {
+        return c === 1 ? "వారం" : "వారాలు";
+      },
+      d: function (c) {
+        return "రోజు" + (c === 1 ? "" : "లు");
+      },
+      h: function (c) {
+        return "గంట" + (c === 1 ? "" : "లు");
+      },
+      m: function (c) {
+        return c === 1 ? "నిమిషం" : "నిమిషాలు";
+      },
+      s: function (c) {
+        return c === 1 ? "సెకను" : "సెకన్లు";
+      },
+      ms: function (c) {
+        return c === 1 ? "మిల్లీసెకన్" : "మిల్లీసెకన్లు";
+      }
     },
     uk: {
       y: function (c) {
@@ -898,7 +1197,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return ["мілісекунд", "мілісекунда", "мілісекунди"][getSlavicForm(c)];
       },
-      decimal: ",",
+      decimal: ","
     },
     ur: {
       y: "سال",
@@ -915,21 +1214,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "منٹ",
       s: "سیکنڈ",
       ms: "ملی سیکنڈ",
-      decimal: ".",
+      decimal: "."
     },
     sk: {
       y: function (c) {
         return ["rok", "roky", "roky", "rokov"][getCzechOrSlovakForm(c)];
       },
       mo: function (c) {
-        return ["mesiac", "mesiace", "mesiace", "mesiacov"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["mesiac", "mesiace", "mesiace", "mesiacov"][getCzechOrSlovakForm(c)];
       },
       w: function (c) {
-        return ["týždeň", "týždne", "týždne", "týždňov"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["týždeň", "týždne", "týždne", "týždňov"][getCzechOrSlovakForm(c)];
       },
       d: function (c) {
         return ["deň", "dni", "dni", "dní"][getCzechOrSlovakForm(c)];
@@ -941,16 +1236,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return ["minúta", "minúty", "minúty", "minút"][getCzechOrSlovakForm(c)];
       },
       s: function (c) {
-        return ["sekunda", "sekundy", "sekundy", "sekúnd"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["sekunda", "sekundy", "sekundy", "sekúnd"][getCzechOrSlovakForm(c)];
       },
       ms: function (c) {
-        return ["milisekunda", "milisekundy", "milisekundy", "milisekúnd"][
-          getCzechOrSlovakForm(c)
-        ];
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekúnd"][getCzechOrSlovakForm(c)];
       },
-      decimal: ",",
+      decimal: ","
     },
     sl: {
       y: function (c) {
@@ -958,11 +1249,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
           return "leto";
         } else if (c % 100 === 2) {
           return "leti";
-        } else if (
-          c % 100 === 3 ||
-          c % 100 === 4 ||
-          (Math.floor(c) !== c && c % 100 <= 5)
-        ) {
+        } else if (c % 100 === 3 || c % 100 === 4 || Math.floor(c) !== c && c % 100 <= 5) {
           return "leta";
         } else {
           return "let";
@@ -971,7 +1258,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       mo: function (c) {
         if (c % 10 === 1) {
           return "mesec";
-        } else if (c % 100 === 2 || (Math.floor(c) !== c && c % 100 <= 5)) {
+        } else if (c % 100 === 2 || Math.floor(c) !== c && c % 100 <= 5) {
           return "meseca";
         } else if (c % 10 === 3 || c % 10 === 4) {
           return "mesece";
@@ -982,7 +1269,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       w: function (c) {
         if (c % 10 === 1) {
           return "teden";
-        } else if (c % 10 === 2 || (Math.floor(c) !== c && c % 100 <= 4)) {
+        } else if (c % 10 === 2 || Math.floor(c) !== c && c % 100 <= 4) {
           return "tedna";
         } else if (c % 10 === 3 || c % 10 === 4) {
           return "tedne";
@@ -1009,11 +1296,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
           return "minuta";
         } else if (c % 10 === 2) {
           return "minuti";
-        } else if (
-          c % 10 === 3 ||
-          c % 10 === 4 ||
-          (Math.floor(c) !== c && c % 100 <= 4)
-        ) {
+        } else if (c % 10 === 3 || c % 10 === 4 || Math.floor(c) !== c && c % 100 <= 4) {
           return "minute";
         } else {
           return "minut";
@@ -1041,7 +1324,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
           return "milisekund";
         }
       },
-      decimal: ",",
+      decimal: ","
     },
     sv: {
       y: "år",
@@ -1066,7 +1349,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       ms: function (c) {
         return "millisekund" + (c === 1 ? "" : "er");
       },
-      decimal: ",",
+      decimal: ","
     },
     sw: {
       y: function (c) {
@@ -1086,6 +1369,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       s: "sekunde",
       ms: "milisekunde",
       decimal: ".",
+      _numberFirst: true
     },
     tr: {
       y: "yıl",
@@ -1096,18 +1380,18 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "dakika",
       s: "saniye",
       ms: "milisaniye",
-      decimal: ",",
+      decimal: ","
     },
     th: {
       y: "ปี",
       mo: "เดือน",
-      w: "อาทิตย์",
+      w: "สัปดาห์",
       d: "วัน",
       h: "ชั่วโมง",
       m: "นาที",
       s: "วินาที",
       ms: "มิลลิวินาที",
-      decimal: ".",
+      decimal: "."
     },
     vi: {
       y: "năm",
@@ -1118,7 +1402,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "phút",
       s: "giây",
       ms: "mili giây",
-      decimal: ",",
+      decimal: ","
     },
     zh_CN: {
       y: "年",
@@ -1129,7 +1413,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "分钟",
       s: "秒",
       ms: "毫秒",
-      decimal: ".",
+      decimal: "."
     },
     zh_TW: {
       y: "年",
@@ -1140,8 +1424,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       m: "分鐘",
       s: "秒",
       ms: "毫秒",
-      decimal: ".",
-    },
+      decimal: "."
+    }
   };
 
   // You can create a humanizer, which returns a function with default
@@ -1151,31 +1435,25 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       var options = assign({}, result, humanizerOptions || {});
       return doHumanization(ms, options);
     };
-
-    return assign(
-      result,
-      {
-        language: "en",
-        delimiter: ", ",
-        spacer: " ",
-        conjunction: "",
-        serialComma: true,
-        units: ["y", "mo", "w", "d", "h", "m", "s"],
-        languages: {},
-        round: false,
-        unitMeasures: {
-          y: 31557600000,
-          mo: 2629800000,
-          w: 604800000,
-          d: 86400000,
-          h: 3600000,
-          m: 60000,
-          s: 1000,
-          ms: 1,
-        },
-      },
-      passedOptions
-    );
+    return assign(result, {
+      language: "en",
+      spacer: " ",
+      conjunction: "",
+      serialComma: true,
+      units: ["y", "mo", "w", "d", "h", "m", "s"],
+      languages: {},
+      round: false,
+      unitMeasures: {
+        y: 31557600000,
+        mo: 2629800000,
+        w: 604800000,
+        d: 86400000,
+        h: 3600000,
+        m: 60000,
+        s: 1000,
+        ms: 1
+      }
+    }, passedOptions);
   }
 
   // The main function is just a wrapper around a default humanizer.
@@ -1184,7 +1462,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
   // Build dictionary from options
   function getDictionary(options) {
     var languagesFromOptions = [options.language];
-
     if (has(options, "fallbacks")) {
       if (isArray(options.fallbacks) && options.fallbacks.length) {
         languagesFromOptions = languagesFromOptions.concat(options.fallbacks);
@@ -1192,7 +1469,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         throw new Error("fallbacks must be an array with at least one element");
       }
     }
-
     for (var i = 0; i < languagesFromOptions.length; i++) {
       var languageToTry = languagesFromOptions[i];
       if (has(options.languages, languageToTry)) {
@@ -1201,7 +1477,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         return LANGUAGES[languageToTry];
       }
     }
-
     throw new Error("No language found.");
   }
 
@@ -1212,7 +1487,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
     // Make sure we have a positive number.
     // Has the nice sideffect of turning Number objects into primitives.
     ms = Math.abs(ms);
-
     var dictionary = getDictionary(options);
     var pieces = [];
 
@@ -1228,11 +1502,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
           // We need to use this expValue to avoid rounding functionality of toFixed call
           var expValue = Math.pow(10, options.maxDecimalPoints);
           var unitCountFloat = ms / unitMS;
-          unitCount = parseFloat(
-            (Math.floor(expValue * unitCountFloat) / expValue).toFixed(
-              options.maxDecimalPoints
-            )
-          );
+          unitCount = parseFloat((Math.floor(expValue * unitCountFloat) / expValue).toFixed(options.maxDecimalPoints));
         } else {
           unitCount = ms / unitMS;
         }
@@ -1243,13 +1513,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       // Add the string.
       pieces.push({
         unitCount: unitCount,
-        unitName: unitName,
+        unitName: unitName
       });
 
       // Remove what we just figured out.
       ms -= unitCount * unitMS;
     }
-
     var firstOccupiedUnitIndex = 0;
     for (i = 0; i < pieces.length; i++) {
       if (pieces[i].unitCount) {
@@ -1257,69 +1526,52 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
         break;
       }
     }
-
     if (options.round) {
       var ratioToLargerUnit, previousPiece;
       for (i = pieces.length - 1; i >= 0; i--) {
         piece = pieces[i];
         piece.unitCount = Math.round(piece.unitCount);
-
         if (i === 0) {
           break;
         }
-
         previousPiece = pieces[i - 1];
-
-        ratioToLargerUnit =
-          options.unitMeasures[previousPiece.unitName] /
-          options.unitMeasures[piece.unitName];
-        if (
-          piece.unitCount % ratioToLargerUnit === 0 ||
-          (options.largest && options.largest - 1 < i - firstOccupiedUnitIndex)
-        ) {
+        ratioToLargerUnit = options.unitMeasures[previousPiece.unitName] / options.unitMeasures[piece.unitName];
+        if (piece.unitCount % ratioToLargerUnit === 0 || options.largest && options.largest - 1 < i - firstOccupiedUnitIndex) {
           previousPiece.unitCount += piece.unitCount / ratioToLargerUnit;
           piece.unitCount = 0;
         }
       }
     }
-
     var result = [];
     for (i = 0, pieces.length; i < len; i++) {
       piece = pieces[i];
       if (piece.unitCount) {
-        result.push(
-          render(piece.unitCount, piece.unitName, dictionary, options)
-        );
+        result.push(render(piece.unitCount, piece.unitName, dictionary, options));
       }
-
       if (result.length === options.largest) {
         break;
       }
     }
-
     if (result.length) {
+      var delimiter;
+      if (has(options, "delimiter")) {
+        delimiter = options.delimiter;
+      } else if (has(dictionary, "delimiter")) {
+        delimiter = dictionary.delimiter;
+      } else {
+        delimiter = ", ";
+      }
       if (!options.conjunction || result.length === 1) {
-        return result.join(options.delimiter);
+        return result.join(delimiter);
       } else if (result.length === 2) {
         return result.join(options.conjunction);
       } else if (result.length > 2) {
-        return (
-          result.slice(0, -1).join(options.delimiter) +
-          (options.serialComma ? "," : "") +
-          options.conjunction +
-          result.slice(-1)
-        );
+        return result.slice(0, -1).join(delimiter) + (options.serialComma ? "," : "") + options.conjunction + result.slice(-1);
       }
     } else {
-      return render(
-        0,
-        options.units[options.units.length - 1],
-        dictionary,
-        options
-      );
+      return render(0, options.units[options.units.length - 1], dictionary, options);
     }
   }
-
   function render(count, type, dictionary, options) {
     var decimal;
     if (has(options, "decimal")) {
@@ -1329,9 +1581,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
     } else {
       decimal = ".";
     }
-
-    var countStr = count.toString().replace(".", decimal);
-
+    var countStr;
+    if (typeof dictionary._formatCount === "function") {
+      countStr = dictionary._formatCount(count, decimal);
+    } else {
+      countStr = count.toString().replace(".", decimal);
+    }
     var dictionaryValue = dictionary[type];
     var word;
     if (typeof dictionaryValue === "function") {
@@ -1339,10 +1594,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
     } else {
       word = dictionaryValue;
     }
-
+    if (dictionary._numberFirst) {
+      return word + options.spacer + countStr;
+    }
     return countStr + options.spacer + word;
   }
-
   function assign(destination) {
     var source;
     for (var i = 1; i < arguments.length; i++) {
@@ -1355,8 +1611,18 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
     }
     return destination;
   }
-
-  // Internal helper function for Polish language.
+  function getArabicForm(c) {
+    if (c === 1) {
+      return 0;
+    }
+    if (c === 2) {
+      return 1;
+    }
+    if (c > 2 && c < 11) {
+      return 2;
+    }
+    return 0;
+  }
   function getPolishForm(c) {
     if (c === 1) {
       return 0;
@@ -1368,16 +1634,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       return 3;
     }
   }
-
-  // Internal helper function for Russian and Ukranian languages.
   function getSlavicForm(c) {
     if (Math.floor(c) !== c) {
       return 2;
-    } else if (
-      (c % 100 >= 5 && c % 100 <= 20) ||
-      (c % 10 >= 5 && c % 10 <= 9) ||
-      c % 10 === 0
-    ) {
+    } else if (c % 100 >= 5 && c % 100 <= 20 || c % 10 >= 5 && c % 10 <= 9 || c % 10 === 0) {
       return 0;
     } else if (c % 10 === 1) {
       return 1;
@@ -1387,8 +1647,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       return 0;
     }
   }
-
-  // Internal helper function for Slovak language.
   function getCzechOrSlovakForm(c) {
     if (c === 1) {
       return 0;
@@ -1400,39 +1658,27 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
       return 3;
     }
   }
-
-  // Internal helper function for Lithuanian language.
   function getLithuanianForm(c) {
-    if (c === 1 || (c % 10 === 1 && c % 100 > 20)) {
+    if (c === 1 || c % 10 === 1 && c % 100 > 20) {
       return 0;
-    } else if (
-      Math.floor(c) !== c ||
-      (c % 10 >= 2 && c % 100 > 20) ||
-      (c % 10 >= 2 && c % 100 < 10)
-    ) {
+    } else if (Math.floor(c) !== c || c % 10 >= 2 && c % 100 > 20 || c % 10 >= 2 && c % 100 < 10) {
       return 1;
     } else {
       return 2;
     }
   }
-
-  // Internal helper function for Latvian language.
   function getLatvianForm(c) {
     return c % 10 === 1 && c % 100 !== 11;
   }
 
   // We need to make sure we support browsers that don't have
   // `Array.isArray`, so we define a fallback here.
-  var isArray =
-    Array.isArray ||
-    function (arg) {
-      return Object.prototype.toString.call(arg) === "[object Array]";
-    };
-
+  var isArray = Array.isArray || function (arg) {
+    return Object.prototype.toString.call(arg) === "[object Array]";
+  };
   function has(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj, key);
   }
-
   humanizeDuration.getSupportedLanguages = function getSupportedLanguages() {
     var result = [];
     for (var language in LANGUAGES) {
@@ -1442,19 +1688,16 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
     }
     return result;
   };
-
   humanizeDuration.humanizer = humanizer;
-
   if (true) {
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
       return humanizeDuration;
     }).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   } else {}
 })();
-
 
 /***/ })
 
 }]);
-//# sourceMappingURL=default~views-arcade-arcade-module~views-emoji-detection-emoji-detection-module~views-expression-tra~f5e49aad.js.map
+//# sourceMappingURL=default-src_app_shared_pipe_humanize-time_humanize-time_module_ts.js.map
