@@ -25,7 +25,7 @@ const mySelf = {
   country: "Italy",
   occupation: "FullStack Developer @ ACCA software",
   email: "nigro.simone@gmail.com",
-  pwebsite: "https://sndesign.it/"
+  website: "https://sndesign.it/"
 };
 ```
 
