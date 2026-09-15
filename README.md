@@ -28,3 +28,5 @@ const mySelf = {
   pwebsite: "https://sndesign.it/"
 };
 ```
+
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=nigrosimone&include_all_commits=true&theme=light_github)](https://github-stats-extended.vercel.app/api?username=nigrosimone&include_all_commits=true&theme=light_github)
