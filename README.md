@@ -33,10 +33,13 @@ const mySelf = {
 
 ## Open source contributions
 
-497 merged pull requests, 382 of them in projects I do not maintain ([search](https://github.com/pulls?q=is%3Amerged+author%3Anigrosimone)). The ones I would point to first:
+566 merged pull requests, 440 of them in projects I do not maintain ([search](https://github.com/pulls?q=is%3Amerged+author%3Anigrosimone)). The ones I would point to first:
 
 | | |
 |---|---|
+| **[Node.js](https://github.com/nodejs/node/pull/66316)** · 123k★ | `node::MakeCallback`, the call every native addon uses to enter JavaScript, from 202-208 to 155-159 ns: no Environment lookups and no global handle on each call. Plus [#66326](https://github.com/nodejs/node/pull/66326) (AsyncResource +29%) and [#66395](https://github.com/nodejs/node/pull/66395) (+12%). |
+| **[Angular](https://github.com/angular/angular/pull/70991)** · 101k★ | The runtime of `animate.enter` and `animate.leave` was in every bundle, also in apps that never use them. Now it is tree-shakable: the default `ng new` app is 2.1 KB smaller. |
+| **[Ts.ED](https://github.com/tsedio/tsed/pull/3485)** · 3.1k★ | New platform `@tsed/platform-fulmine`: Ts.ED applications on fulmine.js, the Express 5 API on uWebSockets.js. Plus [#3528](https://github.com/tsedio/tsed/pull/3528) (deepObject style on generic query models) and [#3486](https://github.com/tsedio/tsed/pull/3486) (json-mapper without copying the options). |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3736)** · 13k★ | When the connection dies with a pipelined batch in flight, the batch never called back and every query behind it waited forever. Now they fail. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3737)** | A portal based query (pg-cursor) in pipeline mode sent rows to the wrong query and killed the process with a TypeError. Now it is rejected with a clear error. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3775)** | A/B benchmark on every pull request: PR against base branch, same runner, with base-vs-base rounds to measure the noise, so a ratio is reported only when it moves more than the noise. |
