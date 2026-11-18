@@ -33,19 +33,20 @@ const mySelf = {
 
 ## Open source contributions
 
-566 merged pull requests, 440 of them in projects I do not maintain ([search](https://github.com/pulls?q=is%3Amerged+author%3Anigrosimone)). The ones I would point to first:
+575 merged pull requests, 449 of them in projects I do not maintain ([search](https://github.com/pulls?q=is%3Amerged+author%3Anigrosimone)). The ones I would point to first:
 
 | | |
 |---|---|
-| **[Node.js](https://github.com/nodejs/node/pull/66316)** · 123k★ | `node::MakeCallback`, the call every native addon uses to enter JavaScript, from 202-208 to 155-159 ns: no Environment lookups and no global handle on each call. Plus [#66326](https://github.com/nodejs/node/pull/66326) (AsyncResource +29%) and [#66395](https://github.com/nodejs/node/pull/66395) (+12%). |
+| **[Node.js](https://github.com/nodejs/node/pull/66316)** · 123k★ | `node::MakeCallback`, the call every native addon uses to enter JavaScript, from 202-208 to 155-159 ns: no Environment lookups and no global handle on each call. Plus [#66326](https://github.com/nodejs/node/pull/66326) (AsyncResource +29%), [#66395](https://github.com/nodejs/node/pull/66395) (+12%) and [#66344](https://github.com/nodejs/node/pull/66344) (async resource stack not freed and allocated again on every callback: on Windows from 136-147 to 6 ns). |
 | **[Angular](https://github.com/angular/angular/pull/70991)** · 101k★ | The runtime of `animate.enter` and `animate.leave` was in every bundle, also in apps that never use them. Now it is tree-shakable: the default `ng new` app is 2.1 KB smaller. |
-| **[Ts.ED](https://github.com/tsedio/tsed/pull/3485)** · 3.1k★ | New platform `@tsed/platform-fulmine`: Ts.ED applications on fulmine.js, the Express 5 API on uWebSockets.js. Plus [#3528](https://github.com/tsedio/tsed/pull/3528) (deepObject style on generic query models) and [#3486](https://github.com/tsedio/tsed/pull/3486) (json-mapper without copying the options). |
+| **[Ts.ED](https://github.com/tsedio/tsed/pull/3485)** · 3.1k★ | New platform `@tsed/platform-fulmine`: Ts.ED applications on fulmine.js, the Express 5 API on uWebSockets.js. Plus [#3532](https://github.com/tsedio/tsed/pull/3532) (`@tsed/socketio` on fulmine), [#3528](https://github.com/tsedio/tsed/pull/3528) (deepObject style on generic query models) and [#3486](https://github.com/tsedio/tsed/pull/3486) (json-mapper without copying the options). |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3736)** · 13k★ | When the connection dies with a pipelined batch in flight, the batch never called back and every query behind it waited forever. Now they fail. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3737)** | A portal based query (pg-cursor) in pipeline mode sent rows to the wrong query and killed the process with a TypeError. Now it is rejected with a clear error. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3775)** | A/B benchmark on every pull request: PR against base branch, same runner, with base-vs-base rounds to measure the noise, so a ratio is reported only when it moves more than the noise. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3568)** | Type parsers cached per column instead of a lookup for every row. |
 | **[node-postgres](https://github.com/brianc/node-postgres/pull/3780)** | pg-native did not expose `detail` and `hint` on errors like pg does. Parity test added. |
 | **[fast-json-stringify](https://github.com/fastify/fast-json-stringify/pull/689)** · 3.7k★ | `asString` was megamorphic, so V8 never optimized it. Made it monomorphic: long strings from 3.6k to 19.7k ops/sec. |
+| **[fast-json-stringify](https://github.com/fastify/fast-json-stringify/pull/865)** | Dates formatted without a second `Date` and `toISOString()`: date-time 3x faster, date and time 9x. Also fixed `asTime` on years over 9999. |
 | **[fast-json-stringify](https://github.com/fastify/fast-json-stringify/pull/817)** | Faster short arrays and objects: inline property checks in the generated code instead of `includes()`, no comma branch per element. |
 | **[fast-json-stringify](https://github.com/fastify/fast-json-stringify/pull/686)** | New `unsafe` string format, skips escaping when the caller knows the string is safe. Plus [#713](https://github.com/fastify/fast-json-stringify/pull/713) and [#691](https://github.com/fastify/fast-json-stringify/pull/691) on the same hot path. |
 | **[ultimate-express](https://github.com/dimdenGD/ultimate-express/pull/356)** · 1.1k★ | A chunked body over the parser limit called the error handler once per chunk, the second call threw and crashed the server. Any client could take the process down. |
